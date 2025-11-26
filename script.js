@@ -4,7 +4,7 @@
 const WRAP_PRICE = 49;
 
 // 👉 UPI details
-const UPI_ID = 'perumalvishnu824@okhdfcbank';
+const UPI_ID = 'subashree1912@okaxis';
 const MERCHANT_NAME = 'Dearly Made';
 
 // 👉 EmailJS details
@@ -828,7 +828,7 @@ function handleConfirmOrderClick() {
   const orderText = buildOrderText(fullName, address, pincode, customerWhatsapp);
 
   // WhatsApp
-  const whatsappNumber = '916381602251';
+  const whatsappNumber = '917550301838';
   const encoded = encodeURIComponent(orderText);
   const waUrl = `https://wa.me/${whatsappNumber}?text=${encoded}`;
   window.open(waUrl, '_blank');
