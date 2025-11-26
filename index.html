@@ -24,7 +24,7 @@
   <!-- Shared CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
   <!-- HEADER -->
   <header id="mainHeader">
     <div class="nav">
@@ -37,7 +37,7 @@
       </div>
 
       <div class="logo">
-        <img src="img/logo.png" alt="Dearly Made logo" onerror="this.src='https://via.placeholder.com/44x44?text=DM'"/>
+        <img src="img/logo.png" alt="Dearly Made logo" />
         <div class="brand-title">
           <div class="name">Dearly Made</div>
         </div>
@@ -113,7 +113,7 @@
 
       <aside class="hero-visual">
         <div class="gift-box">
-          <img src="img/unbox.png" alt="Pastel wrapped gift box with ribbon" onerror="this.src='https://via.placeholder.com/300x220?text=Gift+Box'"/>
+          <img src="img/unbox.png" alt="Pastel wrapped gift box with ribbon"/>
         </div>
         <div style="text-align:center">
           <div class="muted">Build a hamper, ship with love.</div>
@@ -124,27 +124,27 @@
     <!-- CATEGORIES -->
     <section class="categories" aria-label="Featured categories">
       <div class="cat">
-        <img src="img/keychain.png" alt="Keychains category" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/keychain.png" alt="Keychains category"/>
         <div class="title">Keychains</div>
       </div>
       <div class="cat">
-        <img src="img/booklet.png" alt="Memory books" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/booklet.png" alt="Memory books"/>
         <div class="title">Books</div>
       </div>
       <div class="cat">
-        <img src="img/gift card.png" alt="Photo frames" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/gift card.png" alt="Photo frames"/>
         <div class="title">Frames</div>
       </div>
       <div class="cat">
-        <img src="img/card 1.png" alt="Gift cards" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/card 1.png" alt="Gift cards"/>
         <div class="title">Cards</div>
       </div>
       <div class="cat">
-        <img src="img/Bouquet.png" alt="Bouquets" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/Bouquet.png" alt="Bouquets"/>
         <div class="title">Bouquets</div>
       </div>
       <div class="cat">
-        <img src="img/massive combo.png" alt="Gift packs" onerror="this.src='https://via.placeholder.com/82'"/>
+        <img src="img/massive combo.png" alt="Gift packs"/>
         <div class="title">Combos</div>
       </div>
     </section>
@@ -198,7 +198,7 @@
       <div class="testimonials">
         <div class="testi">
           <div style="display:flex;gap:12px;align-items:center">
-            <img src="img/persona/Aishu.png" alt="Aishwarya" onerror="this.src='https://via.placeholder.com/56'"/>
+            <img src="img/persona/Aishu.png" alt="Aishwarya"/>
             <div>
               <strong>Aishwarya R.</strong>
               <div class="muted">⭐⭐⭐⭐⭐</div>
@@ -208,7 +208,7 @@
         </div>
         <div class="testi">
           <div style="display:flex;gap:12px;align-items:center">
-            <img src="img/persona/dinesh.jpg" alt="Dinesh" onerror="this.src='https://via.placeholder.com/56'"/>
+            <img src="img/persona/dinesh.jpg" alt="Dinesh"/>
             <div>
               <strong>Dinesh Kumar</strong>
               <div class="muted">⭐⭐⭐⭐⭐</div>
@@ -218,7 +218,7 @@
         </div>
         <div class="testi">
           <div style="display:flex;gap:12px;align-items:center">
-            <img src="img/persona/janvi.png" alt="Jhanvi" onerror="this.src='https://via.placeholder.com/56'"/>
+            <img src="img/persona/janvi.png" alt="Jhanvi"/>
             <div>
               <strong>Jhanvi M.</strong>
               <div class="muted">⭐⭐⭐⭐⭐</div>
@@ -275,12 +275,12 @@
             <textarea id="custMsg" rows="3" placeholder="Write a short message"></textarea>
           </div>
           <div class="field">
-            <label style="min-width:80px">Color</label>
+          <!--  <label style="min-width:80px">Color</label>
             <select id="custColor">
               <option value="pastel-pink">Pastel Pink</option>
               <option value="lavender">Lavender</option>
               <option value="powder-blue">Powder Blue</option>
-            </select>
+            </select> -->
           </div>
           <div class="field">
             <label style="min-width:80px">Photo</label>
@@ -310,10 +310,10 @@
         <button class="btn btn-outline close-x-btn" onclick="closeMobileMenu()">✕</button>
       </header>
       <div class="mobile-links">
-        <a href="home.html#home" onclick="closeMobileMenu()">Home</a>
+        <a href="index.html" onclick="closeMobileMenu()">Home</a>
         <a href="shop.html" onclick="closeMobileMenu()">Shop</a>
-        <a href="home.html#about" onclick="closeMobileMenu()">About</a>
-        <a href="home.html#contact" onclick="closeMobileMenu()">Contact</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
         <br>
         <a href="#" onclick="alert('Coming soon'); closeMobileMenu()">Track Order</a>
         <a href="#" onclick="alert('Coming soon'); closeMobileMenu()">Login / Sign up</a>

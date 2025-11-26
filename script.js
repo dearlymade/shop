@@ -17,49 +17,313 @@ const STORE_EMAIL = 'mydearlymade@gmail.com';
 
 /* --- PRODUCT DATA (30 ITEMS) --- */
 const products = [
+  // Keychainss
+  {
+    id: 1,
+    slug: 'paper-tulip',
+    title: 'Paper Tulip',
+    price: 25,
+    category: 'bouquets',
+    img: 'img/products/1.png',
+    short: 'A beautifully crafted single paper tulip, perfect for gifting or décor. Lightweight, customizable, and made with high-quality pastel paper for a charming, lasting bloom.',
+    customizable: true
+  },
+  {
+    id: 2,
+    slug: 'single-paper-tulip-bouquet',
+    title: 'Single Paper Tulip Bouquet',
+    price: 40,
+    category: 'bouquets',
+    img: 'img/products/2.png',
+    short: 'A cute single-stem tulip bouquet wrapped neatly for a minimal and elegant look. Perfect for small surprises, notes, or thoughtful gifting on any occasion.',
+    customizable: false
+  },
+  {
+    id: 3,
+    slug: 'paper-tulip-bouquet',
+    title: 'Paper Tulip Bouquet',
+    price: 120,
+    category: 'bouquets',
+    img: 'img/products/3.png',
+    short: 'A charming bouquet of handcrafted paper tulips, arranged beautifully with soft wrapping. Ideal for birthdays, anniversaries, and décor—long-lasting and fully customizable.',
+    customizable: true
+  },
+
+  // Albums / Photo Books
+  {
+    id: 4,
+    slug: 'photo-album-8-page',
+    title: 'Photo Album',
+    price: 120,
+    category: 'albums',
+    img: 'img/products/4.png',
+    short: 'A compact 8-page handmade photo album crafted with premium sheets. Perfect for preserving memories with photos and short messages. Fully customizable for any occasion.',
+    customizable: true
+  },
+  {
+    id: 5,
+    slug: 'photo-album-6-page',
+    title: 'Photo Album',
+    price: 160,
+    category: 'albums',
+    img: 'img/products/5.png',
+    short: 'A beautifully crafted 6-page mini photo album designed for special memories. Comes with decorated pages and space for photos and messages. Customizable for any theme or occasion.',
+    customizable: true
+  },
+
+  // Wall Cards / Room Decor
+  {
+    id: 6,
+    slug: 'aesthetic-wall-card',
+    title: 'Aesthetic Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/6.png',
+    short: 'A cute pastel-themed wall card perfect for adding charm to room décor.',
+    customizable: false
+  },
+  {
+    id: 7,
+    slug: 'minimal-wall-card',
+    title: 'Minimal Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/7.png',
+    short: 'A clean and simple wall card ideal for study corners and workspace décor.',
+    customizable: false
+  },
+  {
+    id: 8,
+    slug: 'vibrant-quote-wall-card',
+    title: 'Vibrant Quote Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/8.png',
+    short: 'A bright and colorful card with hand-drawn elements, perfect for mood boards.',
+    customizable: false
+  },
+  {
+    id: 9,
+    slug: 'personalized-wall-card',
+    title: 'Personalized Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/9.png',
+    short: 'A customizable wall card made with premium sheets for room makeover setups.',
+    customizable: true
+  },
+  {
+    id: 10,
+    slug: 'cute-mini-wall-card',
+    title: 'Cute Mini Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/10.png',
+    short: 'A small, expressive wall card that adds personality to any wall or shelf.',
+    customizable: false
+  },
+  {
+    id: 11,
+    slug: 'handcrafted-art-wall-card',
+    title: 'Handcrafted Art Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/11.png',
+    short: 'A neatly crafted art card perfect for photo walls and themed décor.',
+    customizable: false
+  },
+  {
+    id: 12,
+    slug: 'positive-vibes-wall-card',
+    title: 'Positive Vibes Wall Card',
+    price: 40,
+    category: 'wall-cards',
+    img: 'img/products/12.png',
+    short: 'A modern, uplifting wall card designed to bring positivity and style to your space.',
+    customizable: false
+  },
+
+  // Hampers
+  {
+    id: 13,
+    slug: 'mini-gift-hamper',
+    title: 'Mini Gift Hamper',
+    price: 100,
+    category: 'hampers',
+    img: 'img/products/13.png',
+    short: 'A cute mini hamper featuring a clip greeting card, a handmade flower, and a personalized photo card—perfect for small surprises and thoughtful gifting.',
+    customizable: true
+  },
+  {
+    id: 14,
+    slug: 'cute-combo-hamper',
+    title: 'Cute Combo Hamper',
+    price: 100,
+    category: 'hampers',
+    img: 'img/products/14.png',
+    short: 'A budget-friendly hamper with a decorative clip card, handcrafted flower, and a custom photo card. Ideal for birthdays, anniversaries, and sweet gestures.',
+    customizable: true
+  },
+  {
+    id: 15,
+    slug: 'classic-mini-hamper',
+    title: 'Classic Mini Hamper',
+    price: 100,
+    category: 'hampers',
+    img: 'img/products/15.png',
+    short: 'A sweet mini hamper featuring a custom photo card, a decorative clip, and a single handmade flower bouquet—perfect for thoughtful and budget-friendly gifting.',
+    customizable: true
+  },
+  {
+    id: 16,
+    slug: 'handcrafted-gift-hamper',
+    title: 'Handcrafted Gift Hamper',
+    price: 150,
+    category: 'hampers',
+    img: 'img/products/16.png',
+    short: 'A beautifully curated hamper featuring a paper tulip bouquet, a handwritten letter, and a mini greeting card—perfect for heartfelt and memorable gifting.',
+    customizable: true
+  },
+  {
+    id: 17,
+    slug: 'precious-moments-hamper',
+    title: 'Precious Moments Hamper',
+    price: 150,
+    category: 'hampers',
+    img: 'img/products/17.png',
+    short: 'A thoughtful hamper that includes a handmade photo album, a personalized photo card, and a cute mini greeting card—perfect for cherishing special moments.',
+    customizable: true
+  },
+  {
+    id: 18,
+    slug: 'sweet-surprise-hamper',
+    title: 'Sweet Surprise Hamper',
+    price: 150,
+    category: 'hampers',
+    img: 'img/products/18.png',
+    short: 'A charming hamper featuring a single paper tulip bouquet, a personalized photo card, and a cute paper bouquet—perfect for gifting with love and care.',
+    customizable: true
+  },
+  {
+    id: 19,
+    slug: 'heartfelt-gift-hamper',
+    title: 'Heartfelt Gift Hamper',
+    price: 150,
+    category: 'hampers',
+    img: 'img/products/19.png',
+    short: 'A lovely hamper including a mini paper bouquet, a handwritten letter, a mini greeting card, and a personalized photo card—perfect for expressing love and thoughtful gestures.',
+    customizable: true
+  },
+  {
+    id: 20,
+    slug: 'charming-surprise-hamper',
+    title: 'Charming Surprise Hamper',
+    price: 150,
+    category: 'hampers',
+    img: 'img/products/20.png',
+    short: 'A delightful hamper featuring a paper tulip, a personalized photo card, a mini greeting card, a greeting card, and a handwritten letter—perfect for thoughtful gifting and special moments.',
+    customizable: true
+  },
+  {
+    id: 21,
+    slug: 'elegant-gift-hamper',
+    title: 'Elegant Gift Hamper',
+    price: 200,
+    category: 'hampers',
+    img: 'img/products/21.png',
+    short: 'A beautifully curated hamper featuring a handmade photo album and a single paper tulip bouquet—perfect for preserving memories and gifting with love.',
+    customizable: true
+  },
+  {
+    id: 22,
+    slug: 'ultimate-gift-hamper',
+    title: 'Ultimate Gift Hamper',
+    price: 200,
+    category: 'hampers',
+    img: 'img/products/22.png',
+    short: 'A generous hamper including a photo card, photo bouquet, greeting card, mini greeting card, and a handwritten letter—perfect for heartfelt gifting and making special moments memorable.',
+    customizable: true
+  },
+
+  // Special Handmade Gifts / Keepsakes
+  {
+    id: 23,
+    slug: 'handmade-explosion-box',
+    title: 'Handmade Explosion Box',
+    price: 300,
+    category: 'handmade-gifts',
+    img: 'img/products/23.png',
+    short: 'A beautifully crafted explosion box filled with surprises, notes, and decorations. Perfect for birthdays, anniversaries, and special occasions to delight your loved ones.',
+    customizable: true
+  },
+
+  // Premium Bouquets
+  {
+    id: 24,
+    slug: 'premium-paper-tulip-bouquet',
+    title: 'Premium Paper Tulip Bouquet',
+    price: 350,
+    category: 'bouquets',
+    img: 'img/products/24.png',
+    short: 'A stunning handcrafted tulip bouquet made with high-quality paper. Perfect for gifting on special occasions or adding a lasting decorative touch to any space.',
+    customizable: false
+  },
+
+  // Canvas Art
+  {
+    id: 25,
+    slug: 'hand-painted-scenery-canvas',
+    title: 'Hand-Painted Scenery Canvas',
+    price: 120,
+    category: 'canvas-art',
+    img: 'img/products/25.png',
+    short: 'Beautifully hand-painted scenery on canvas, perfect for home décor or gifting. Customizable in size and design to suit your personal style.',
+    customizable: true
+  },
+  {
+    id: 26,
+    slug: 'hand-painted-portrait-canvas',
+    title: 'Hand-Painted Portrait Canvas',
+    price: 150,
+    category: 'canvas-art',
+    img: 'img/products/26.png',
+    short: 'A custom hand-painted portrait on canvas, perfect for gifting or personal décor. Captures memories and expressions beautifully with a personal touch.',
+    customizable: true
+  },
+
   // Keychains
-  {id:1, slug:'resin-name-keychain', title:'Resin Name Keychain', price:249, category:'keychains', img:'img/keychain.png', short:'Cute resin name keychain with glitter finish.', customizable:true},
-  {id:2, slug:'photo-keychain', title:'Mini Photo Keychain', price:199, category:'keychains', img:'img/keychain.png', short:'Carry your favourite memory everywhere.', customizable:true},
-  {id:3, slug:'initial-charm-keychain', title:'Initial Charm Keychain', price:179, category:'keychains', img:'img/keychain.png', short:'Minimal alphabet charm for daily use.', customizable:true},
-  {id:4, slug:'couple-keychain-set', title:'Couple Keychain Set', price:299, category:'keychains', img:'img/keychain.png', short:'Matching pair for you & your person.', customizable:true},
-  {id:5, slug:'glitter-resin-keychain', title:'Glitter Resin Keychain', price:229, category:'keychains', img:'img/keychain.png', short:'Sparkly pastel resin keychain.', customizable:true},
+  {
+    id: 27,
+    slug: 'single-keychain',
+    title: 'Single Keychain',
+    price: 50,
+    category: 'keychains',
+    img: 'img/products/27.png',
+    short: 'A cute, handmade keychain perfect for gifting or personal use. Lightweight, durable, and charmingly crafted.',
+    customizable: false
+  },
+  {
+    id: 28,
+    slug: 'pair-keychains',
+    title: 'Pair Keychains',
+    price: 100,
+    category: 'keychains',
+    img: 'img/products/28.png',
+    short: 'A matching pair of handmade keychains—ideal for couples, best friends, or gifting. Stylish, durable, and thoughtfully crafted.',
+    customizable: false
+  },
 
-  // Memory books / Scrapbooks
-  {id:6, slug:'mini-scrapbook', title:'Mini Scrapbook', price:699, category:'memory-books', img:'img/products/lovely combo.png', short:'Handmade scrapbook for 20–25 photos.', customizable:true},
-  {id:7, slug:'travel-memory-book', title:'Travel Memory Book', price:849, category:'memory-books', img:'img/booklet.png', short:'Document your favourite trip beautifully.', customizable:true},
-  {id:8, slug:'couple-memory-book', title:'Couple Memory Book', price:899, category:'memory-books', img:'img/booklet.png', short:'Romantic storybook for your journey together.', customizable:true},
-  {id:9, slug:'birthday-scrapbook', title:'Birthday Scrapbook', price:799, category:'memory-books', img:'img/booklet.png', short:'Perfect for birthday surprise memories.', customizable:true},
-  {id:10, slug:'family-photo-book', title:'Family Photo Book', price:949, category:'memory-books', img:'img/booklet.png', short:'Capture family milestones in one book.', customizable:true},
-
-  // Frames
-  {id:11, slug:'name-photo-frame', title:'Name Photo Frame', price:599, category:'frames', img:'img/gift card.png', short:'Custom name + picture frame.', customizable:true},
-  {id:12, slug:'collage-photo-frame', title:'Collage Photo Frame', price:749, category:'frames', img:'img/gift card.png', short:'Multiple photos in one classy frame.', customizable:true},
-  {id:13, slug:'spotify-code-frame', title:'Spotify Code Frame', price:649, category:'frames', img:'img/gift card.png', short:'Scan & play your special song.', customizable:true},
-  {id:14, slug:'minimal-aesthetic-frame', title:'Minimal Aesthetic Frame', price:549, category:'frames', img:'img/gift card.png', short:'Clean & modern decor-friendly design.', customizable:true},
-  {id:15, slug:'polaroid-grid-frame', title:'Polaroid Grid Frame', price:699, category:'frames', img:'img/gift card.png', short:'Polaroid-style grid of memories.', customizable:true},
-
-  // Gift cards
-  {id:16, slug:'pop-card', title:'Pop-Up Card', price:149, category:'gift-cards', img:'img/products/combo 1.png', short:'Cute pop-up surprise card.', customizable:true},
-  {id:17, slug:'message-card-set', title:'Message Card Set (10)', price:199, category:'gift-cards', img:'img/card 1.png', short:'Tiny cards to hide sweet notes.', customizable:true},
-  {id:18, slug:'foldable-story-card', title:'Foldable Story Card', price:249, category:'gift-cards', img:'img/card 1.png', short:'Tell your story in panels.', customizable:true},
-  {id:19, slug:'photo-pull-card', title:'Photo Pull-Out Card', price:279, category:'gift-cards', img:'img/card 1.png', short:'Pull to reveal hidden photos.', customizable:true},
-  {id:20, slug:'mini-envelope-card', title:'Mini Envelope Card Box', price:259, category:'gift-cards', img:'img/card 1.png', short:'Tiny envelopes filled with messages.', customizable:true},
-
-  // Wall cards / decor
-  {id:21, slug:'wall-cards', title:'Wall Cards Pack', price:499, category:'wall-cards', img:'img/products/card 3.png', short:'Set of wall cards for room decor.', customizable:true},
-  {id:22, slug:'aesthetic-wall-grid', title:'Aesthetic Wall Grid Set', price:549, category:'wall-cards', img:'img/products/card 3.png', short:'Mood-board style grid prints.', customizable:true},
-  {id:23, slug:'photo-clips-garland', title:'Photo Clips Garland', price:399, category:'wall-cards', img:'img/products/card 3.png', short:'String lights + clips for photos.', customizable:true},
-  {id:24, slug:'calendar-wall-cards', title:'Calendar Wall Cards', price:449, category:'wall-cards', img:'img/products/card 3.png', short:'Monthly wall cards you can write on.', customizable:true},
-  {id:25, slug:'quote-wall-set', title:'Quote Wall Set', price:429, category:'wall-cards', img:'img/products/card 3.png', short:'Motivational & cute quote prints.', customizable:true},
-
-  // Bouquets
-  {id:26, slug:'pastel-bouquet', title:'Pastel Bouquet', price:399, category:'bouquets', img:'img/products/Bouquet.png', short:'Handmade pastel paper bouquet.', customizable:false},
-  {id:27, slug:'rose-bouquet-box', title:'Rose Bouquet Box', price:549, category:'bouquets', img:'img/products/Bouquet.png', short:'Box-style bouquet for occasions.', customizable:true},
-  {id:28, slug:'chocolate-bouquet', title:'Chocolate Bouquet', price:699, category:'bouquets', img:'img/products/Bouquet.png', short:'Chocolates arranged like flowers.', customizable:true},
-
-  // Combos
-  {id:29, slug:'mini-gift-combo', title:'Mini Gift Combo', price:599, category:'combos', img:'img/products/massive combo.png', short:'Keychain + card + tiny frame.', customizable:true},
-  {id:30, slug:'massive-combo-pack', title:'Massive Combo Pack', price:1299, category:'combos', img:'img/products/massive combo.png', short:'Bouquet + scrapbook + frame + cards.', customizable:true}
+  // Handmade Art / Decorative Piece
+  {
+    id: 29,
+    slug: 'handmade-stone-painting',
+    title: 'Handmade Stone Painting',
+    price: 150,
+    category: 'handmade-art',
+    img: 'img/products/29.png',
+    short: 'A beautifully painted stone, perfect for décor or gifting. Each piece is unique, handcrafted with care and artistic detailing.',
+    customizable: false
+  }
 ];
 
 // Stored state (shared across pages)
@@ -451,7 +715,7 @@ function handleGenerateQrClick() {
   const qrBox = document.getElementById('upiQrContainer');
   if (!qrBox) return;
 
-  qrBox.innerHTML = ''; // clear old QR if any
+  qrBox.innerHTML = '';
   if (typeof QRCode === 'undefined') {
     qrBox.innerHTML = '<span class="muted">QR library not loaded. Please check your script tag.</span>';
     return;
@@ -464,19 +728,16 @@ function handleGenerateQrClick() {
   });
 }
 
-// Build the text used for BOTH WhatsApp and email order_text
 function buildOrderText(fullName, address, pincode, customerWhatsapp) {
   const grandTotal = calculateCartTotal();
   let message = '🛍️ *New Dearly Made Order*\n\n';
 
-  // CUSTOMER DETAILS
   message += '*Customer Details*\n';
   message += `*Name:* ${fullName}\n`;
   message += `*Address:* ${address}\n`;
   message += `*Pincode:* ${pincode}\n`;
   message += `*Customer WhatsApp:* ${customerWhatsapp}\n\n`;
 
-  // ORDER ITEMS
   message += '*Order Items* 📦\n\n';
 
   cart.forEach((item, index) => {
@@ -521,7 +782,6 @@ function buildOrderText(fullName, address, pincode, customerWhatsapp) {
   return message;
 }
 
-// Send hidden email via EmailJS
 function sendOrderEmail(fullName, address, pincode, customerWhatsapp, orderText) {
   if (!window.emailjs) {
     console.warn('EmailJS SDK not loaded');
@@ -530,31 +790,23 @@ function sendOrderEmail(fullName, address, pincode, customerWhatsapp, orderText)
 
   try {
     emailjs.init(EMAILJS_PUBLIC_KEY);
-  } catch (e) {
-    // ignore if already initialised
-  }
+  } catch (e) {}
 
   const templateParams = {
     email: STORE_EMAIL,
     to_name: 'Dearly Made',
     from_site: 'Dearly Made Website',
-
     customer_name: fullName,
     customer_address: address,
     customer_pincode: pincode,
     customer_whatsapp: customerWhatsapp,
-
     order_text: orderText
   };
 
   emailjs
     .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-    .then(function() {
-      console.log('EmailJS: order email sent');
-    })
-    .catch(function(err){
-      console.error('EmailJS error', err);
-    });
+    .then(() => console.log('EmailJS: order email sent'))
+    .catch(err => console.error('EmailJS error', err));
 }
 
 function handleConfirmOrderClick() {
@@ -575,16 +827,16 @@ function handleConfirmOrderClick() {
 
   const orderText = buildOrderText(fullName, address, pincode, customerWhatsapp);
 
-  // 1) Open WhatsApp with full message
-  const whatsappNumber = '916381602251'; // YOUR WhatsApp to receive orders
+  // WhatsApp
+  const whatsappNumber = '916381602251';
   const encoded = encodeURIComponent(orderText);
   const waUrl = `https://wa.me/${whatsappNumber}?text=${encoded}`;
   window.open(waUrl, '_blank');
 
-  // 2) Hidden Email to you via EmailJS
+  // Hidden Email
   sendOrderEmail(fullName, address, pincode, customerWhatsapp, orderText);
 
-  // 3) Clear cart + close modal
+  // Clear cart
   cart.splice(0, cart.length);
   localStorage.setItem('dm_cart', JSON.stringify(cart));
   updateCartCount();
@@ -599,11 +851,9 @@ function handleConfirmOrderClick() {
 document.addEventListener('DOMContentLoaded', () => {
   const searchEl = document.getElementById('searchInput');
 
-  const path = window.location.pathname.toLowerCase();
-  const isShopPage =
-    path.includes('shop.html') ||
-    path.endsWith('/shop') ||
-    path.endsWith('/shop/');
+  // 🔥 Reliable page type from <body data-page="...">
+  const pageType = document.body.dataset.page || '';
+  const isShopPage = pageType === 'shop';
 
   let initialQuery = '';
 
@@ -625,14 +875,13 @@ document.addEventListener('DOMContentLoaded', () => {
       renderProducts(products); // all 30
     }
   } else {
-    // home page: show 6 bestsellers
+    // home page: show only 6 bestsellers
     renderProducts(products.slice(0, 6));
   }
 
   // Search behaviour
   if (searchEl){
     if (isShopPage) {
-      // live filter on shop page
       searchEl.addEventListener('input', function(e){
         const q = e.target.value.trim().toLowerCase();
         if(!q){
@@ -645,7 +894,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts(res);
       });
     } else {
-      // home page: Enter → open shop with query
       searchEl.addEventListener('keydown', function(e){
         if (e.key === 'Enter') {
           const q = e.target.value.trim();
