@@ -528,24 +528,23 @@ function sendOrderEmail(fullName, address, pincode, customerWhatsapp, orderText)
     return;
   }
 
-  // init only once
   try {
     emailjs.init(EMAILJS_PUBLIC_KEY);
   } catch (e) {
-    // if already initialised, it will just throw; safe to ignore
+    // ignore if already initialised
   }
 
   const templateParams = {
-    email: STORE_EMAIL,                 // {{email}}
-    to_name: 'Dearly Made',             // {{to_name}}
-    from_site: 'Dearly Made Website',   // {{from_site}}
+    email: STORE_EMAIL,
+    to_name: 'Dearly Made',
+    from_site: 'Dearly Made Website',
 
     customer_name: fullName,
     customer_address: address,
     customer_pincode: pincode,
     customer_whatsapp: customerWhatsapp,
 
-    order_text: orderText               // {{order_text}}
+    order_text: orderText
   };
 
   emailjs
@@ -599,7 +598,13 @@ function handleConfirmOrderClick() {
 // =============================
 document.addEventListener('DOMContentLoaded', () => {
   const searchEl = document.getElementById('searchInput');
-  const isShopPage = window.location.pathname.toLowerCase().includes('shop');
+
+  const path = window.location.pathname.toLowerCase();
+  const isShopPage =
+    path.includes('shop.html') ||
+    path.endsWith('/shop') ||
+    path.endsWith('/shop/');
+
   let initialQuery = '';
 
   if (isShopPage) {
@@ -617,7 +622,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
       renderProducts(res);
     } else {
-      renderProducts(products);
+      renderProducts(products); // all 30
     }
   } else {
     // home page: show 6 bestsellers
